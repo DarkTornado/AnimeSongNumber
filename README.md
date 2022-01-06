@@ -7,3 +7,4 @@
 
 ## 라이선스
 * Deep Dark License - Type A
+* 단, 곡 목록 사용시에는 미리 개발자에게 연락주세요.
