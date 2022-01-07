@@ -3,12 +3,86 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="user-scalable=no width=device-width" />
+    <meta name="description" content="서브컬쳐 음악 노래방 번호" />
+    <meta name="og:title" content="혼모노래방" />
+    <meta name="og:description" content="서브컬쳐 음악 노래방 번호" />
     <title>
         혼모노래방
     </title>
 </head>
+<style>
+    input.Button {
+        background: #EEEEEE;
+        border: 0;
+        box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.5);
+        width: 98%;
+        height: 43px;
+        outline: none;
+    }
 
-<body>
+    input.EditText {
+        width: 96%;
+        height: 30px;
+        font-size: 16px;
+        outline: none;
+        border: 0;
+        border-bottom: 1.5px solid #000000;
+    }
+
+    table {
+        border-top: 1px solid #000000;
+        color: #000000;
+        border-collapse: collapse;
+    }
+</style>
+
+<body bgcolor=#FFFFFF style="margin:0px 0px 0px 0px;">
+
+    <div style="background:#00ACC1;padding:15px 20px 15px 20px;box-shadow:0px 4px 5px 0px rgba(0, 0, 0, 0.3);width:100%;position:fixed;">
+        <font color=WHITE size='5px' face='arial'>혼모노래방</font>
+    </div>
+    <br>
+
+    <div style="padding:65px 20px 20px 20px;">
+        <font color=BLACK size='3px'>
+
+            <font color=BLACK size='3px'>검색어 : </font>
+            <center>
+                <input id="input" class=EditText placeholder="검색어를 입력하세요..."><br><br>
+
+        </font>
+        <font color=BLACK size='1px'>
+            <input class=Button type=button value="검색" onclick="searchSongs();"><br><br>
+
+            <div id="output" style="display:none">
+                <table id="output_table" border=1 width=100%>
+                </table>
+            </div>
+
+            </center>
+        </font>
+    </div>
+    <hr width=95%>
+    <font color=BLACK size='2px'>
+        <p align=center>© 2022 Dark Tornado, All rights reserved.</p>
+    </font>
+    <script>
+        function searchSongs() {
+            var input = document.getElementById("input").value;
+
+            var req = new XMLHttpRequest();
+            req.open("GET", "./songInfo.txt", false);
+            req.onreadystatechange = () => {
+                if (req.readyState === 4) {
+                    if (req.status === 200 || req.status == 0) {
+                        var allText = req.responseText;
+                        alert(allText);
+                    }
+                }
+            }
+            req.send(null);
+        }
+    </script>
 </body>
 
 </html>
