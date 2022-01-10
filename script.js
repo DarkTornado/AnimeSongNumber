@@ -15,8 +15,7 @@ function searchSongs() {
 function showData(data) {
     var input = document.getElementById("input").value;
     data = data.split("\n");
-    var src = "",
-        count = 0;
+    var src = "", count = 0;
 
     for (var n = 0; n < data.length; n++) {
         if (data[n].includes(input)) {
