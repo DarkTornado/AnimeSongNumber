@@ -1,3 +1,7 @@
+/*
+깃허브에서는 백-엔드를 못써서 전부 클라이언트에서 처리
+*/
+
 function searchSongs() {
     var req = new XMLHttpRequest();
     req.open("GET", "./songInfo.txt", false);
