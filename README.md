@@ -6,5 +6,5 @@
 * [깃허브로 피난온 웹 버전 링크](https://darktornado.github.io/AnimeSongNumber/) <s>아직 다 안옮김</s>
 
 ## 라이선스
-* [Deep Dark License](https://github.com/DarkTornado/DeepDarkLicense) - Type A
+* [Deep Dark License](https://github.com/DarkTornado/DeepDarkLicense) - [Type A](LICENSE.md)
 * 단, 곡 목록 사용시에는 미리 개발자에게 연락주세요.
