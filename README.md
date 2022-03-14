@@ -3,7 +3,7 @@
 
 * 기존 혼모노래방 앱 및 웹앱이 사용하던 서버가 계속 죽은 상태로 유지중이라 깃허브로 피난왔담!
 * 아무튼 기존에 있던 [안드로이드 앱 버전 다운로드 링크](https://play.google.com/store/apps/details?id=com.darktornado.animesongnumber)
-* [깃허브로 피난온 웹 버전 링크](https://darktornado.github.io/AnimeSongNumber/) <s>아직 다 안옮김</s>
+* [깃허브로 피난온 웹 버전 링크](https://darktornado.github.io/AnimeSongNumber/)
 * 기존에는 뒤에서 검색을 수행했었지만, 깃허브 호스팅에서는 불가능해서 그냥 앞에서 JS로 검색
 
 ## 라이선스
