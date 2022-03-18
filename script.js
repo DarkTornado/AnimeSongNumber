@@ -4,7 +4,7 @@
 
 function searchSongs() {
     var req = new XMLHttpRequest();
-    req.open("GET", "./songInfo.txt", false);
+    req.open("GET", "./songInfo.csv", false);
     req.onreadystatechange = () => {
         if (req.readyState === 4) {
             if (req.status === 200 || req.status == 0) {
