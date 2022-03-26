@@ -17,12 +17,12 @@ function searchSongs() {
 }
 
 function showData(data) {
-    var input = document.getElementById("input").value;
+    var input = document.getElementById("input").value.toLowerCase();
     data = data.split("\n");
     var src = "", count = 0;
 
     for (var n = 0; n < data.length; n++) {
-        if (!data[n].includes(input)) continue;
+        if (!data[n].toLowerCase().includes(input)) continue;
         var datum = data[n].split("::");
         var num = "";
         if (datum[0] != "null") {
