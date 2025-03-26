@@ -1,6 +1,6 @@
 {
     "name": "혼모노래방 - 서브컬쳐 음악 노래방 번호",
-    "혼모노래방": "혼모노래방",
+    "short_name": "혼모노래방",
     "start_url": "/AnimeSongNumber",
     "display": "standalone",
     "icons": [{
