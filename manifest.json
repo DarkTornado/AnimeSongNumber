@@ -1,0 +1,18 @@
+{
+    "name": "혼모노래방 - 서브컬쳐 음악 노래방 번호",
+    "혼모노래방": "혼모노래방",
+    "start_url": "/AnimeSongNumber",
+    "display": "standalone",
+    "icons": [{
+            "src": "./icon.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "any"
+        }, {
+            "src": "./icon_512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any"
+        }
+    ]
+}

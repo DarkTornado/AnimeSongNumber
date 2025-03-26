@@ -12,6 +12,8 @@
         혼모노래방
     </title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="manifest" href="./manifest.json" crossorigin="anonymous"/>
+    <link rel="apple-touch-icon" href="./icon.png" />
 </head>
 
 
@@ -43,9 +45,21 @@
     </div>
     <hr width=95%>
     <font color=BLACK size='2px'>
-        <p align=center>© 2017-2024 Dark Tornado, All rights reserved.</p>
+        <p align=center>© 2017-2025 Dark Tornado, All rights reserved.</p>
     </font>
     <script src="./script.js"></script>
+    <script>
+        (function() {
+            if ("serviceWorker" in navigator) {
+                navigator.serviceWorker.register('./sw.js')
+                .then(function(registration) {
+                    console.log(registration);
+                }, function(err) {
+                    console.log(err)
+                });
+            }
+        })();
+    </script>
 </body>
 
 </html>
